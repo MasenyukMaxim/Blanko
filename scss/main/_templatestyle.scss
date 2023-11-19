@@ -1,0 +1,133 @@
+.template {
+   background-color: #FF7143;
+   &__container {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__content {
+      flex: 0 1 556px;
+      margin: 323px 0px 251px 38px;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__title {
+      text-align: center;
+      font-size: 72px;
+      font-weight: 700;
+      color: #000000;
+      margin: 0px 0px 27px 0px;
+   }
+
+   &__text {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      color: #000000;
+      margin: 0px 0px 22px 0px;
+   }
+
+   &__buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center ;
+   }
+
+   &__image {
+      flex: 0 1 auto;
+   }
+   &__image img {
+      max-width: 100%;
+   }
+}
+.button-template {
+   margin: 0px 4px; 
+   display: block;
+   border-radius: 6px; 
+   padding: 20px 32px;
+   text-align: center;
+   font-size: 18px;
+   font-weight: 700;
+   color: #000000;
+   &__white{
+      color: #000000;
+      background-color: #ffffff;
+      transition: background-color 0.3s ease;
+   }
+   &__white:hover{
+      background-color: #cecece;
+   }
+   &__black {
+      background-color: #000000;
+      color: #ffffff;
+      transition: background-color 0.3s ease;
+   }
+   &__black:hover{
+      background-color: #464646;
+   }
+}
+
+// =================================
+@media (max-width: 1280px) {
+   .template__content{
+      margin: 290px 18px 0px 18px;
+   }
+   .template__title {
+      font-size: 56px;
+      margin: 0px 0px 27px 0px;
+   }
+   .template__text {
+      font-size: 18px;
+      margin: 0px 0px 22px 0px;
+   }
+}
+@media (max-width: 991.98px) {
+   .template__content{
+      margin: 200px 18px 0px 0px;
+   }
+   .template__title {
+      font-size: 48px;
+      margin: 0px 0px 27px 0px;
+   }
+   .template__text {
+      font-size: 18px;
+      margin: 0px 0px 22px 0px;
+   }
+   .button-template {
+      font-size: 16px;
+      padding: 18px 28px;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .template__image{
+      display: none;
+   }
+   .template__container{
+      align-items: center;
+   }
+   .template__content{
+      flex: 1 1 auto;
+      margin: 98px 0px 0px 0px;
+   }
+   .template__buttons {
+      display: block;
+   }
+   .button-template {
+      display:block;
+      padding: 12px 32px;
+      font-size: 16px;
+      margin: 0px 0px 16px 0px;
+   }
+   .button-template {
+      display: block;
+      padding: 12px 32px;
+      font-size: 16px;
+      margin: 0px 0px 16px 0px;  
+   }
+   .button-template:last-child{
+      margin: 0px 0px px 0px;  
+   }
+}

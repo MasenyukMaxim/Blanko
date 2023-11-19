@@ -1,0 +1,84 @@
+.druk {
+   background-color: #000000;
+   &__container {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__content {
+      flex: 0 1 576px;
+      padding: 100px 0px 114px 0px;
+   }
+
+   &__image {
+      margin: 0px 0px 39px 0px;
+      text-align: center;
+   }  
+
+   &__title {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 48px;
+      color: #FFFFFF;
+      margin: 0px 0px 41px 0px;
+   }
+
+   &__name {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px;
+      color: #FFFFFF;
+   }
+
+   &__place {
+      color: #FFFFFFB2;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      margin: 0px 0px 30px 0px;
+   }
+   &__boxs {
+      display: flex;
+      justify-content: center;
+   }
+}
+
+.box {  
+   width: 16px;
+   height: 16px;
+   margin: 0px 3px;
+   background-color: #FFFFFF66;  
+   &_white {
+      background-color: #FFFFFF;
+   }
+}
+
+// ===================================
+
+@media (max-width: 767.98px) { 
+   .druk__content{
+      padding: 32px 0px;
+   }
+   .druk__image{
+      margin: 0px;
+   }
+   .druk__image img{
+      width: 50px;
+      height: 10px;
+   }
+   .druk__title{
+      font-size: 20px;
+      margin: 20px 0px;
+      line-height: 140%;
+   }
+   .druk__name{
+      font-size: 16px;
+   }
+   .dtuk__place{
+      font-size: 14px;  
+      margin: 0px 0px 16px 0px;
+   }
+}

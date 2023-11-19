@@ -1,0 +1,62 @@
+@import "../scss/nullstyle/nullstyle";
+@import "../scss/headerstyle/headerstyle";
+@import "../scss/main/templatestyle";  
+@import "../scss/main/featurestyle";
+@import "../scss/main/drukstyle";
+@import "../scss/main/landingstyle";
+@import "../scss/footer/footerstyle";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+body{
+   font-family:"Roboto";
+   font-style: 16px;
+   color: #000000;
+}
+.wrapper {
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%  ;
+}
+[class*="__container"]{
+   max-width: 1310px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+main{
+   flex: 1 1 auto;
+}
+
+@media (max-width: 1280px) {
+   [class*="__container"]{
+      max-width: 970px;
+   }
+
+}
+
+// TABLE
+
+@media (max-width: 991.98px) {
+   [class*="__container"]{
+      max-width: 750px;
+   }
+
+}
+
+// MOBILE
+
+@media (max-width: 767.98px) {
+   [class*="__container"]{
+      max-width: none;
+   }
+
+}
+
+// MOBILE SMALL
+
+@media (max-width:479.98px){
+   
+}
+
+

@@ -1,0 +1,157 @@
+body{
+   font-family: serif;
+}
+
+
+
+.header {
+   position: fixed;
+   width: 100%;
+   background-color: #000000; 
+   &__container {
+      display: flex;
+      align-items: center;
+   }
+   &__content{
+      flex: 1 1 auto;
+      display: flex; 
+      align-items: center;
+   }
+   &__logo {
+      position: relative;
+      z-index: 5;
+      margin: 22px 0px;
+   }
+
+   &__email {
+      margin: 0px 0px 0px 65px;
+   }
+
+   &__menu {
+      flex: 1 1 auto;
+   }
+
+   &__button {
+      margin: 0px 0px 0px 65px;  
+   }
+}
+.block-email {
+   padding: 4px 8px;
+   border-radius: 4px;
+   background: rgba(255, 255, 255, 0.12);
+   color: #ffffff;  
+   font-weight: 400;
+}
+.menu {
+
+   &__body {
+   }
+
+   &__list {
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   &__item {
+      margin: 0px 20px 0px 0px;
+   }
+   &__item:last-child {
+      margin: 0px;
+   }
+
+   &__link{
+      color: #ffffff;
+      font-weight: 400;
+   }
+   &__link:hover{
+      text-decoration: underline;
+   }
+
+}
+.button {
+
+   display: block;
+   padding: 12px 32px;
+   border-radius: 6px;
+   background-color: #FF7143;
+   color: #000000;
+   text-align: center;
+   font-size: 16px;
+   font-weight: 700;
+   transition: background-color 0.3s ease 0s;
+}
+.button:hover  {
+   background-color: #ff8c65;
+}
+
+.menu-icon {
+   &__open {
+      display: none;
+      position: relative;
+      z-index: 5;
+   }
+
+   &__close {
+      display: none;
+      position: relative;
+      z-index: 5;
+   }
+}
+
+// ==========================================
+
+@media (max-width: 991.98px) {
+   [class*="__container"]{
+      max-width: 750px;
+   }
+   .header__email{
+      margin: 0px 0px 0px 30px;
+   }
+   .header__button{
+      margin: 0px 0px 0px 30px;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .header__container{
+      align-items: center;
+      position: relative;
+   }
+   .header__content{
+      width: 100%;
+      padding: 67px 0px 16px 15px;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #000000;
+      transition: left 0.3s ease 0s;
+   }
+   .header:target .header__content{
+      left: 0;
+   }
+   .header__logo{ 
+      flex: 1 1 auto;
+      margin: 12px 0px;
+   }
+   .header__email{
+      margin:0;
+   }
+   .header__menu{
+      margin: 24px 0px 0px 0px;
+   }
+   .header__button {
+      margin: 33px 0px 0px 0px;  
+   }
+   .menu-icon__open{
+      display: flex;
+   }
+   .header:target .menu-icon__open{
+      display: none; 
+   }
+   .header:target .menu-icon__close{
+      display: flex;
+   }
+}
